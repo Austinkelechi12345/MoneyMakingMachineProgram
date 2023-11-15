@@ -1,32 +1,16 @@
-// (function () {
-//     "use strict";
 
-//     let carousels = function () {
-//         $(".owl-carousel1").owlCarousel({
-//             loop: true,
-//             center: true,
-//             margin: 0,
-//             responsiveClass: true,
-//             nav: false,
-//             responsive: {
-//                 0: {
-//                     items: 1,
-//                     nav: false
-//                 },
-//                 680: {
-//                     items: 2,
-//                     nav: false,
-//                     loop: false
-//                 },
-//                 1000: {
-//                     items: 3,
-//                     nav: true
-//                 }
-//             }
-//         });
-//     };
+function rotate() {
+    let lastChild = $('.slider div:last-child').clone();
+    /*$('#test').html(lastChild)*/
+    $('.slider div').removeClass('firstSlide')
+    $('.slider div:last-child').remove();
+    $('.slider').prepend(lastChild)
+    $(lastChild).addClass('firstSlide')
+  }
+  
+  window.setInterval(function(){
+    rotate()
+  }, 4000);
 
-//     (function ($) {
-//         carousels();
-//     })(jQuery);
-// })();
+
+  

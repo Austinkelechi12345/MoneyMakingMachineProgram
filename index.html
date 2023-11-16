@@ -6,21 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- css linking -->
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="js/scripts.js" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
- 
   <!-- ... -->
   <link rel="shortcut icon" href="./img/MMM.png" type="image/x-icon">
 
   <!-- js linking -->
-  <script src="/js/scripts.js"></script>
-  <script src="/js/jquery-3.6.0.js"></script>
+  <script src="./js/script.js"></script>
   <!-- ... -->
   <title>Money Making Machine</title>
 </head>
+
+<!-- scripting -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init('JEuI5t4KoFt6xNqcu');
+  })();
+
+</script>
+
+
+
+</script>
 
 <body>
 
@@ -34,7 +43,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Category</a></li>
+          <li><a href="#">Investment</a></li>
         </ul>
       </nav>
     </div>
@@ -91,11 +100,11 @@
             at!
           </p>
 
-        
 
 
 
-    
+
+
         </section>
       </div>
 
@@ -162,19 +171,35 @@
         </div>
       </div>
     </div>
-    
+
   </section>
 
-  <div>
-    <input type="text" placeholder="full name" required/> <br>
-    <input type="text" placeholder="full name" required><br>
-   <textarea placeholder="Message" required></textarea>
-   <button>Send</button>
+
+
+  <div class="container contact-container">
+    
+  <form class="contact-form">
+    <div method="post" class="formInput">
+      <input type="text" id="fullName" placeholder="Full Name" required class="hey" /> <br>
+      <input type="text" id="fullName" placeholder="Full Name" required /> <br>
+      <input type="text" id="email_id" placeholder="email" required><br>
+      <textarea id="message" placeholder="Message" required></textarea>
+      <button onclick="sendMail()">Send</button>
+    </div>
+    </form>
+
+
+   
+
+
+
+   
+    </form>
   </div>
 
-  
 
- 
+
+
 
 
 

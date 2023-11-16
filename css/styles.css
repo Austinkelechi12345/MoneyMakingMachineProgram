@@ -121,7 +121,7 @@ nav {
 .customer-review {
   background: aliceblue;
   margin-top: 30px;
-  border-radius: 200px;
+  border-radius: 100px;
 }
 
 .gtco-testimonials {
@@ -225,6 +225,46 @@ nav {
 }
 
 /* styling for my contact form */
+.contact-form{
+  display: flex;
+}
 
+#contactForm {
+  width: 600%;
+  max-width: 600px;
+  padding: 15px;
+  margin: auto;
+}
+.formInput{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.formInput, .formInput textarea {
+  width: 500px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  display: inline-block;
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  border-radius: 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  position: relative;
+}
+.contact-container{
+ justify-content: center;
+ margin-right: 1000px;
 
+}
 
+.hey{
+  display: none;
+}

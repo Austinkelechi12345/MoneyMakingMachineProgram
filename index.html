@@ -8,11 +8,16 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <!-- ... -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
   <link rel="shortcut icon" href="./img/MMM.png" type="image/x-icon">
 
+  <!-- ... -->
+
   <!-- js linking -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/script.js"></script>
+  <script src="./js/jquery-3.6.0.js"></script>
   <!-- ... -->
   <title>Money Making Machine</title>
 </head>
@@ -41,7 +46,7 @@
       <nav class="animate__animated animate__fadeInDown">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#" id="about">About</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Investment</a></li>
         </ul>
@@ -49,7 +54,7 @@
     </div>
   </div>
 
-  <div class="content border">
+  <div class="content">
     <a href="" class="btn animate__bounceIn">Get started</a>
     <div>
       <h1>Invest with us...</h1>
@@ -65,21 +70,15 @@
     class="animated-logo">
   </div>
 
-  <div class="container">
+  <div class="container about-container">
     <div class="row">
       <div class="col-6">
         <section class="about-section">
           <div class="circular-landscape">
+            <br>
             <img src="./img/secretary.jpg" alt="" class="about-us">
             <div>
-              <h2>What we do</h2>
-              <br><br>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quas, perspiciatis voluptate
-                inventore tenetur commodi architecto, eligendi dolore minus exercitationem, laboriosam ullam hic
-                corporis fugiat error aspernatur expedita delectus maxime?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, similique accusamus molestias neque
-                vitae impedit quae quas ab, dicta odio, necessitatibus dolore minus laborum mollitia debitis ipsam eaque
-                sapiente deserunt?</p>
+              
             </div>
 
 
@@ -89,6 +88,7 @@
       <div class="col-6">
         <section class="about-section" id="About-us">
           <h2 class="animate__animated animate__zoomInDown">About Us</h2>
+          <br><br>
           <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius libero culpa possimus
             quaerat. A voluptas optio quas, aperiam nemo quibusdam sed laudantium aliquid animi, molestias blanditiis,
             magnam iusto! Reprehenderit, aspernatur.
@@ -99,15 +99,45 @@
             earum illo fuga assumenda ab nesciunt. Porro accusamus provident eveniet eius? Distinctio omnis recusandae
             at!
           </p>
-
-
-
-
-
-
         </section>
       </div>
 
+    </div>
+  </div>
+  <br><br><br>
+  <h2 class="what-we-do  animate__lightSpeedInLeft">What we do</h2>
+  <div class="card-group container">
+
+    
+    <div class="card">
+      <img src="./img/background image.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">INVESTMENT SERVICES</h5>
+        <p class="card-text hhh">We provide you with the best investment plan. The amount to invest nd the expected returns in due time. For more info you can <em class="text-muted"><a href="#" class="contact-ref">contact us...</a></em></p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated few mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/background image.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">LOAN ELIGIBILITY</h5>
+        <p class="card-text">Loans and benefits are eligible for investors who have previously invested with us. To apply or check if you are eligible please contact us...</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated few mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/background image.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">PROPER MANAGEMENT</h5>
+        <p class="card-text"> We manage your investment dashboard providing a safe, encrypted  and  one on one investment with our virtual staffs. Visit our customer care...</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated few mins ago</small>
+      </div>
     </div>
   </div>
 
@@ -125,8 +155,7 @@
               <h5>Ronne Galle <br />
                 <span> Project Manager </span>
               </h5>
-              <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                impedit quo minus id quod maxime placeat ” </p>
+              <p class="card-text">“ Thanks MMM Program for standing on your word, i invested all my savings and got double of it within a few... <em class="text-muted">more</em> ” </p>
             </div>
           </div>
         </div>
@@ -138,8 +167,7 @@
               <h5>Missy Limana<br />
                 <span> Engineer </span>
               </h5>
-              <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                impedit quo minus id quod maxime placeat ” </p>
+              <p class="card-text">“ I taught this was a scam until i gave it a shot now i am made for life, i would keep investing. Thank you MMM program... <em class="text-muted">more</em> ” </p>
             </div>
           </div>
         </div>
@@ -151,8 +179,7 @@
               <h5>Martha Brown<br />
                 <span> Project Manager </span>
               </h5>
-              <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                impedit quo minus id quod maxime placeat ” </p>
+              <p class="card-text">“i had financial crises all i did was invest my last and i got more than double. Thanks Money Making Machine program... <em class="text-muted">more</em> ” </h4>
             </div>
           </div>
         </div>
@@ -164,8 +191,7 @@
               <h5>Hanna Lisem<br />
                 <span> Project Manager </span>
               </h5>
-              <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                impedit quo minus id quod maxime placeat ” </p>
+              <p class="card-text">“ I needed a business loan for my no one could offer me one, i got a loan and invested it and got high returns... <em class="text-muted">more</em> ” </p>
             </div>
           </div>
         </div>
@@ -177,25 +203,37 @@
 
 
   <div class="container contact-container">
-    
-  <form class="contact-form">
-    <div method="post" class="formInput">
-      <input type="text" id="fullName" placeholder="Full Name" required class="hey" /> <br>
-      <input type="text" id="fullName" placeholder="Full Name" required /> <br>
-      <input type="text" id="email_id" placeholder="email" required><br>
-      <textarea id="message" placeholder="Message" required></textarea>
-      <button onclick="sendMail()">Send</button>
-    </div>
+    <p class="h2">Contact Us</p>
+
+    <form class="contact-form">
+      <div method="post" class="formInput">
+        <input type="text" id="fullName" placeholder="Full Name" required class="hey" /> <br>
+        <input type="text" id="fullName" placeholder="Full Name" required /> <br>
+        <input type="text" id="email_id" placeholder="email" required><br>
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button onclick="sendMail()">Send</button>
+      </div>
     </form>
 
-
-   
-
+  
 
 
-   
+
+
+
+
+
     </form>
   </div>
+
+
+
+
+
+
+<footer>
+  
+</footer>
 
 
 

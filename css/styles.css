@@ -33,6 +33,11 @@ p {
   margin-left: 30px;
   margin-top: 10px;
 }
+.fa-bars{
+  float: right;
+  font-size: 40px;
+
+}
 .content h1 {
   font-size: 30px;
   font-weight: 100;
@@ -477,4 +482,7 @@ input {
   text-decoration: none;
   color: whitesmoke;
 }
+
+/* welcome page */
+
 

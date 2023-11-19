@@ -4,17 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- css linking -->
+  <!-- custom css linking -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link href="./css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/responsive.css">
   <link rel="shortcut icon" href="./img/MMM.png" type="image/x-icon">
 
   <!-- ... -->
 
-  <!-- js linking -->
+  <!--custom js linking -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/jquery-3.6.0.js"></script>
@@ -31,34 +33,40 @@
   })();
 
 </script>
-
-
-
 </script>
 
 <body>
+  <!-- nav bar section -->
+  <div class="container-fluid mobile-container">
 
-  <div class="container-fluid">
+    <div class="navbar">
+      <img src="img/MMM.png" alt="logo" class="logo animate__animated animate__flip active " />
 
-    <div class="navbar sticky">
-      <img src="img/MMM.png" alt="logo" class="logo animate__animated animate__flip" />
-
-      <nav class="animate__animated animate__fadeInDown">
+      <nav class="animate__animated animate__fadeInDown" id="backTOTOP">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#About-us" id="about">About</a></li>
-          <li><a href="#Contact-us">Contact</a></li>
-          <li><a href="#Reviews">Reviews</a></li>
+          <div id="myLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#About-us" id="about">About</a></li>
+            <li><a href="#Contact-us">Contact</a></li>
+            <li><a href="#Reviews">Reviews</a></li>
+
+          </div>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fas fa-bars"></i></a>
+
         </ul>
       </nav>
     </div>
   </div>
 
+  <!-- first body section -->
   <div class="content">
-    <a href="" class="btn animate__bounceIn">Get started</a>
+    <a href="#Contact-us" class="btn animate__bounceIn">Get started</a>
     <div>
       <h1>Invest with us...</h1>
-      <p>Money Making Machine is a life changing opportunity. <br> We are at your service.</p>
+      <strong>
+        <p>Money Making Machine is a life changing opportunity. <br> We are at your service.</p>
+      </strong>
 
     </div>
   </div>
@@ -80,18 +88,19 @@
             <div>
 
             </div>
-
+            <!-- About section -->
 
           </div>
         </section>
       </div>
       <div class="col-6">
         <section class="about-section" id="About-us">
-          <h2 class="animate__animated animate__zoomInDown">About Us</h2>
+          <h2 class="animate__animated animate__zoomInDown about-us-heading">About Us</h2>
           <br><br>
           <p class="about-content">Money Making Machine program(MMM PROGRAM M3) has been in existence since March 15th,
-            2021. We aim to financially empowering individuals through investment.
-            We have a global network of over 140,000 and over 20,000 staffs accross the globe. Our goal is to set a
+            2021. We aim at financially empowering individuals through investment.
+            We have a global network of over 140,000 investors and over 20,000 staffs accross the globe. Our goal is to
+            set a
             standard whereby investors are able to invest and get high returns.
 
           <p>We provide a safe and encrypted investment transaction within our safe space. We are as well 100 percent
@@ -175,7 +184,7 @@
               <h5>Missy Limana<br />
                 <span> Public Relations Specialist</span>
               </h5>
-              
+
               <p class="card-text">“ I taught this was a scam until i gave it a shot now i am made for life, i would
                 keep investing. Thank you MMM program... <em class="text-muted">more</em> ” </p>
             </div>
@@ -281,7 +290,8 @@
                     <i class="far fa-envelope-open"></i>
                     <div class="cta-text">
                       <h4>Mail us</h4>
-                      <span class="span-text"><a href="mailto:mmminvestmentprogram@gmail.com" class="mail-link">mmminvestmentprogram@gmail.com</a></span>
+                      <span class="span-text"><a href="mailto:mmminvestmentprogram@gmail.com"
+                          class="mail-link">mmminvestmentprogram@gmail.com</a></span>
                     </div>
                   </div>
                 </div>
@@ -297,7 +307,18 @@
                     </div>
                   </div>
                 </div>
-              
+
+
+                <section class="back-to-top">
+
+
+                  <a href="#"><img class="img1" src="./images/back.jpg" alt="image/png" class="" data-toggle="tooltip"
+                      data-placement="left" title="Back to the Top"></a>
+
+                  <div class="backDiv">Back to the top</div>
+
+                </section>
+
 
         </footer>
 

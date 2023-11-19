@@ -1,0 +1,29 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+}
+.content{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgb(255, 255, 255,0.8);
+}
+.overlay-content{
+   position: absolute;
+   transform: translateY(-50%);
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   right: 0;
+   text-align: center;
+   color: #555;
+}

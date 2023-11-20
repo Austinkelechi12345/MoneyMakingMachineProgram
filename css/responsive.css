@@ -2,21 +2,19 @@
   .fa-bars {
     display: none;
   }
+ 
 }
 @media screen and (max-width: 600px) {
   .mobile-container {
     width: 100%;
     margin: auto;
     border-radius: 10px;
-    
   }
   .navbar {
-  
     background-color: #333;
     position: relative;
-    
   }
-  
+
   .navbar #myLinks {
     display: none;
   }
@@ -38,25 +36,57 @@
     background-color: #ddd;
     color: black;
   } */
-  a li{
+  a li {
     margin-top: 200px;
   }
-  .active{
-    background-color: #04AA6D;
+  .active {
+    background-color: #04aa6d;
     color: white;
   }
-  .animated-logo{
+  .animated-logo {
     display: none;
   }
- div section h2{
+  div section h2 {
     text-align: center;
- }
- .about-content{
+  }
+  .about-content {
     display: none;
- }
- 
-  .content{
-    margin-top: 300px;
   }
 
+  .content {
+    margin-top: 300px;
+  }
+   .about-container {
+    margin-top: 20pc;
+    margin: auto;
+    
+  } 
+  .about-us{
+    margin-top: -400px;
+  }
+  .about-section{
+    text-align: center;
+    justify-content: center;
+  }
+ .about-note1{
+   display: none;
+ }
+  /* .about-card {
+    display: inline;
+    
+  } */
+  .customer-review {
+    top: 0;
+    right: 0;
+    left: 0;
+    line-height: 30px;
+    margin-top: 100pc;
+  }
+  .contact {
+    margin-top: 50pc;
+  }
+  footer {
+    margin-top: 400px;
+    border-radius: 10px;
+  }
 }

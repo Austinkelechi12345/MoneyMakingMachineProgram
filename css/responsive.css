@@ -2,7 +2,6 @@
   .fa-bars {
     display: none;
   }
- 
 }
 @media screen and (max-width: 600px) {
   .mobile-container {
@@ -32,49 +31,62 @@
     right: 0;
     top: 0;
   }
-  /* .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  } */
+  .sub-text{
+    width: 300px;
+    height: 50px;
+    justify-content: center;
+align-items: center;
+text-align: center;
+margin-right: 100px;
+  }
+
   a li {
     margin-top: 200px;
   }
-  .active {
-    background-color: #04aa6d;
-    color: white;
-  }
+
   .animated-logo {
     display: none;
   }
   div section h2 {
     text-align: center;
   }
-  .about-content {
-    display: none;
+
+  .about-us-heading {
+    float: left;
   }
 
   .content {
-    margin-top: 300px;
+    margin-top: 200px;
   }
-   .about-container {
+  .about-container {
     margin-top: 20pc;
     margin: auto;
-    
-  } 
-  .about-us{
-    margin-top: -400px;
   }
-  .about-section{
+  .about-us {
+   margin-top: -100px;
+   
+  }
+  .about-card{
+    margin-top: 200px;
+  }
+ .what-we-do{
+  margin-top: 230px;
+ }
+.abouttt{
+  width: 500px;
+  height: 100px; 
+  padding: 50px;
+  margin-top: -300px;
+  
+}
+  .about-section {
     text-align: center;
     justify-content: center;
   }
- .about-note1{
-   display: none;
- }
-  /* .about-card {
-    display: inline;
-    
-  } */
+  .about-mobile {
+    display: none;
+  }
+
   .customer-review {
     top: 0;
     right: 0;
@@ -83,10 +95,10 @@
     margin-top: 100pc;
   }
   .contact {
-    margin-top: 50pc;
+    margin-top: 5pc;
   }
   footer {
-    margin-top: 400px;
+    margin-top: 180px;
     border-radius: 10px;
   }
 }

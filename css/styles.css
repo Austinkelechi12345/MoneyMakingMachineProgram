@@ -124,6 +124,10 @@ nav {
   background-position: center center;
   background-size: cover;
 }
+.compactment{
+  margin-top: 300px;
+}
+
 .about-section {
   margin-top: 300px;
   z-index: auto;
